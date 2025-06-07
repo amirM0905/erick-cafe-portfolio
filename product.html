@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اریک کافه | فروشگاه آنلاین قهوه و تجهیزات</title>
+    <link rel="stylesheet" href="style/myStyle(2).css">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/commonStyles.css">
+    <meta name="description" content=" کافی‌شاپ اریک - محصولات و خدمات. طراحی شده توسط امیر محمد نیازی">
+    <meta name="keywords" content=" قهوه, رزومه, اریک, تخفیف, ">
+    <meta name="author" content=" amir mohammad niazi ">
+    <meta name="theme-color" content="#9E624C">
+    <link rel="icon" href="assets/img/ph_coffee-bean-fill.png" type="image/png">
+    <!-- CDN bootstrap link for icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body dir="rtl" class=" dark:bg-gray-800 dark:text-white">
+
+
+    <!--______________________________________________ header -->
+    <header class="bg-transparent w-[100%] laptop:px-12 relative">
+        <div class="">
+
+            <nav class="flex justify-around px-3 items-center pc:px-6 gap-[3rem] py-[1.5rem] laptop:justify-between">
+
+                <div class="rightNav laptop:hidden bg-[#F2E5DA] rounded-full" data-hamber>
+
+                    <label class="hamburger inline w-[3rem]">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 32 32">
+                            <path class="line line-top-bottom"
+                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                            </path>
+                            <path class="line" d="M7 16 27 16"></path>
+                        </svg>
+                    </label>
+
+                </div>
+
+                <!-- 768px -->
+                <div class="rightNav max-laptop:hidden laptop:flex flex-row-reverse gap-2">
+                    <div class="">
+                        <img src="assets/img/ph_coffee-bean-fill.png"
+                            class="max-w-[2.8rem] bg-[#F2E5DA] rounded-full p-2" alt="coffe">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[#9E624C] font-bold text-[0.9rem] text-end"> - ۰۲۱</span>
+                        <span class="text-gray-600 font-bold text-[0.8rem]">۲۳۴۵۶</span>
+                    </div>
+                </div>
+
+                <div class="centerNav pc:mr-[3rem]">
+                    <h1>
+                        <a href="index.html">
+                            <img src="assets/img/image 1.png" alt="logo">
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="leftNav laptop:hidden bg-[#F2E5DA] p-[10px] rounded-full cursor-pointer">
+                    <img src="assets/img/bag-2.png" alt="bag">
+                </div>
+
+                <!-- 768px -->
+                <div class="leftNav max-laptop:hidden laptop:flex flex-row-reverse gap-2 items-center justify-center">
+
+                    <div class="leftNav bg-[#9E624C] p-[8px] rounded-full cursor-pointer">
+                        <img src="assets/img/bag-2.png" class="max-w-[1.5rem] w-full" alt="bag">
+                    </div>
+
+                    <div class="text-center">
+                        <a href="login.html"
+                            class="border-1 text-[0.6rem] font-bold text-black border-gray-900 rounded-full p-2">ورود /
+                            ثبت نام</a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- 768px -->
+            <div id="navBarFixed"
+                class="navBarFix max-w-[92%] absolute max-laptop:hidden z-[1000] laptop:flex w-full bg-[#28221E] items-center justify-between px-2 py-3 rounded-full">
+
+                <div class="rightFixed mr-2">
+                    <ul class="flex gap-5 items-center">
+
+                        <li>
+                            <a href="#"
+                                class="text-[0.9rem] pc:text-[1.1rem] text-white text-shadow-[0px_2px_0px_#874c24] font-bold">
+                                صفحه اصلی
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <div>
+                                <button type="button" id="dropdownButton"
+                                    class="inline-flex items-center justify-center w-full text-[0.9rem] font-medium text-white transition-all duration-150 ease-in-out"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    لیست محصولات
+
+                                    <svg class="rtl-svg-margin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div id="dropdownMenu"
+                                class="origin-top-right absolute right-0 mt-2 w-60 rounded-xl shadow-2xl bg-[#30291f] ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
+                                style="display: none;" role="menu" aria-orientation="vertical"
+                                aria-labelledby="dropdownButton">
+                                <div class="py-2" role="none">
+
+                                    <a href="index.html"
+                                        class="text-white block px-4 py-3 text-sm hover:bg-[#3b312b] transition-colors duration-150 ease-in-out"
+                                        role="menuitem" tabindex="-1" id="menu-item-0">
+                                        <span class="font-bold text-[1rem]"> تخفیفات ویژه </span>
+                                        <span class="block text-xs text-neutral-400">مشاهده و خرید با تخفیف بالا</span>
+                                    </a>
+
+                                    <a href="index.html"
+                                        class="text-neutral-200 block px-4 py-3 text-sm hover:bg-[#3b312b] transition-colors duration-150 ease-in-out"
+                                        role="menuitem" tabindex="-1" id="menu-item-1">
+                                        <span class="font-bold text-[1rem]"> پرفروش ترین ها </span>
+                                        <span class="block text-xs text-neutral-400"> محصولات پرفروش ما </span>
+                                    </a>
+
+                                    <div class="border-t border-gray-100 my-1"></div>
+
+                                    <a href="login.html"
+                                        class="text-red-600 block px-4 py-3 text-center hover:bg-[#3b2b2b] transition-colors duration-150 ease-in-out"
+                                        role="menuitem" tabindex="-1" id="menu-item-2">
+                                        <span class="font-bold text-[1rem]">خروج از حساب</span>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li><a href="index.html" class="text-[0.8rem] pc:text-[0.9rem] text-white "> خدمات </a></li>
+
+                        <li><a href="#endFoot" class="text-[0.8rem] pc:text-[0.9rem] text-white "> درباره ما </a></li>
+
+                        <li><a href="#endFoot" class="text-[0.8rem] pc:text-[0.9rem] text-white "> تماس با ما </a></li>
+
+                    </ul>
+                </div>
+
+                <div
+                    class="leftFixed bg-[#FFFFFF33] cursor-pointer rounded-full flex flex-row-reverse gap-1 justify-center items-center py-1 px-2">
+                    <img src="assets/img/instagram.png" alt="logo insta">
+                    <p class="text-[0.8rem] text-center text-gray-300 mt-[5px]">erick-cafe</p>
+                </div>
+
+            </div>
+
+
+            <div
+                class="priceInfo flex mt-[3rem] laptop:mt-[6rem] flex-col smPc:flex-row gap-[5rem] smPc:gap-0 smPc:mb-[5rem]">
+
+                <div class="oneDiveInPriceInfo flex flex-col px-8 smPc:p-0 gap-4 flex-3/6">
+
+                    <div
+                        class="topDiv max-h-[20rem] min-h-[20rem] border-1 py-[5rem] border-gray-200 dark:border-gray-900 dark:border-2 rounded-xl w-full flex items-center justify-center ">
+                        <img src="assets/img/image 13.png" class="imgTopDiv min-w-[5rem] max-w-[5rem]" alt="img cafe 1">
+                    </div>
+
+                    <div class="bottomDiv flex flex-row justify-center items-center gap-4 w-full mx-auto">
+
+
+                        <div
+                            class="border-1 cursor-pointer border-gray-200 dark:border-gray-900 dark:border-2 rounded-xl p-4 h-[6rem] smPc:h-[7rem] w-full flex items-center justify-center mx-auto">
+                            <img src="assets/img/image 13.png" class="thumb max-w-[2.4rem] w-full"
+                                data-src="assets/img/image 13.png" alt="img cafe 2">
+                        </div>
+
+                        <div
+                            class="border-1 cursor-pointer border-gray-200 dark:border-gray-900 dark:border-2 rounded-xl p-4 h-[6rem] smPc:h-[7rem] w-full flex items-center justify-center mx-auto">
+                            <img src="assets/img/image 13 (1).png" class="thumb max-w-[2.4rem] w-full"
+                                data-src="assets/img/image 13 (1).png" alt="img cafe 3">
+                        </div>
+
+                        <div
+                            class="border-1 cursor-pointer border-gray-200 dark:border-gray-900 dark:border-2 rounded-xl p-4 h-[6rem] smPc:h-[7rem] w-full flex items-center justify-center mx-auto">
+                            <img src="assets/img/Screenshot__44_-removebg-preview.png"
+                                class="thumb max-w-[2.8rem] w-full"
+                                data-src="assets/img/Screenshot__44_-removebg-preview.png" alt="img cafe 4">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="twoDiveInPriceInfo flex flex-col gap-[4rem] smPc:gap-[3rem] px-6">
+
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-[1.2rem] smPc:text-[1.3rem] font-[800] text-black dark:text-neutral-100">
+                            دانه قهوه باکسی برند Boxilian
+                        </h2>
+                        <span class="text-gray-400 text-[0.9rem] font-[400]">
+                            دانه قهوه | برند : Boxilian
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <p class=" font-[600] text-black dark:text-neutral-100 mb-3 text-[1.1rem]">
+                            ویژگی های محصول
+                        </p>
+
+                        <div class="flex gap-3">
+                            <div
+                                class="h-[12.5rem] w-[0.2rem] bg-linear-to-b from-[#9E624C] to-gray-400 from-20% to-25% rounded-full ml-3 my-auto ">
+                            </div>
+
+                            <div class="flex flex-col gap-5">
+                                <p class="text-black dark:text-neutral-100 text-[1rem] font-[500]">
+                                    > <span class="text-gray-400"> جنس محصول :</span> آلومینوم خالص ۱۰۰٪
+                                </p>
+                                <p class="text-black dark:text-neutral-100 text-[1rem] font-[500]">
+                                    > <span class="text-gray-400"> کارایی :</span> استفاده روزمره
+                                </p>
+                                <p class="text-black dark:text-neutral-100 text-[1rem] font-[500]">
+                                    > <span class="text-gray-400"> اندازه :</span> ۵۰۰ گرم
+                                </p>
+                                <p class="text-black dark:text-neutral-100 text-[1rem] font-[500]">
+                                    > <span class="text-gray-400"> نوع محصول :</span> روبوستا
+                                </p>
+                                <p class="text-black dark:text-neutral-100 text-[1rem] font-[500]">
+                                    > <span class="text-gray-400"> نوع بسته بندی :</span> کاغذی
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+
+                        <p class="text-[1.1rem] font-[600]">
+                            گزینه مورد نظر انتخاب کنید :
+                        </p>
+
+                        <!-- From Uiverse.io by Javierrocadev -->
+                        <div
+                            class="relative group rounded-lg w-64 bg-gray-50 overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-gray-400 before:rounded-full before:blur-lg before:[box-shadow:-60px_20px_10px_10px_#F9B0B9]">
+                            <svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100"
+                                preserveAspectRatio="xMidYMid meet" height="100"
+                                class="w-8 h-8 absolute left-0 -rotate-45 stroke-[#cdac8a] top-1.5 group-hover:rotate-0 duration-300">
+                                <path stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"
+                                    d="M60.7,53.6,50,64.3m0,0L39.3,53.6M50,64.3V35.7m0,46.4A32.1,32.1,0,1,1,82.1,50,32.1,32.1,0,0,1,50,82.1Z"
+                                    class="svg-stroke-primary"></path>
+                            </svg>
+                            <select
+                                class="appearance-none hover:placeholder-shown:bg-emerald-500 relative text-[#7d4d3b] bg-transparent ring-0 outline-none border border-neutral-500 placeholder-violet-700 text-sm font-bold rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5">
+                                <option> ۳۰۰ گرم </option>
+                                <option>۵۰۰ گرم</option>
+                                <option>۸۰۰ گرم</option>
+                                <option>۱ عدد</option>
+                                <option>۲ عدد</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+                    <div
+                        class="bg-[#fff1eae1] rounded-2xl w-full flex py-5 flex-col smPc:flex-row-reverse gap-4 items-center content-center smPc:px-8">
+
+                        <div
+                            class="flex items-center dark:text-gray-600 dark:font-bold gap-[5rem] laptop:w-full laptop:justify-evenly smPc:gap-0 smPc:justify-center">
+                            <p class="max-smPc:block min-smPc:hidden">
+                                قیمت :
+                            </p>
+                            <p id="priceElem" class="text-[#9E624C] text-[2rem] smPc:min-w-[10rem]">
+                                <span class="text-[1.1rem]">تومان</span> ۲۴۰,۰۰۰
+                            </p>
+                        </div>
+
+                        <div class="flex gap-10 laptop:gap-[10rem] smPc:gap-[1rem]">
+
+                            <a href="login.html"
+                                class=" text-white select-none bg-[#9E624C] w-[9rem] h-[3rem] flex items-center justify-center  text-center rounded-3xl">
+                                افزودن به سبر خرید
+                            </a>
+                            <div class="flex gap-3 justify-center items-center">
+                                <div id="plusDiv"
+                                    class="select-none dark:text-gray-700  bg-[#F2E5DA] py-1 cursor-pointer px-3 rounded-[50%] flex items-center justify-center text-center">
+                                    +
+                                </div>
+
+                                <p id="numDiv" class=" dark:text-gray-700 ">
+                                    1
+                                </p>
+
+                                <div id="minesDiv"
+                                    class="select-none dark:text-gray-700  bg-[#F2E5DA] py-1 cursor-pointer px-3 rounded-[50%] flex items-center justify-center text-center">
+                                    -
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="threeDiveInPriceInfo smPc:flex smPc:flex-col-reverse smPc:justify-end">
+
+                    <div
+                        class="border-1 border-gray-200 rounded-xl w-full gap-6 px-4 py-3 max-w-[80%] smPc:max-w-full mx-auto flex smPc:flex-col">
+
+                        <div class="img flex items-center justify-center">
+                            <img src="assets/img(2)/Frame 7.png" alt="img cafe 5" class="max-w-[2.9rem]">
+                        </div>
+
+                        <div class="flex gap-2 items-start smPc:items-center justify-center flex-col">
+
+                            <p>نیاز به مشاوره دارید؟</p>
+
+                            <p class="text-[#9E624C] font-bold text-[1.3rem]">
+                                <span class="text-black"> ۱۲۳۴۵۶ </span>- ۰۲۱
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="scrollX flex flex-row smPc:flex-col gap-6 smPc:gap-0 overflow-x-scroll smPc:overflow-x-hidden overflow-y-hidden my-[5rem] smPc:m-0">
+
+                        <div class="itemGuarantee max-laptop:mr-5">
+
+                            <div class="img flex items-center justify-center">
+                                <img src="assets/img(2)/group.png" alt="forward">
+                            </div>
+
+                            <div class="flex gap-2 items-start font-bold justify-center flex-col">
+
+                                <p class="dark:text-black dark:font-bold"> شرایط ارسال </p>
+
+                                <span class="text-[#28221E] font-normal text-[0.9rem]">
+                                    حدود ۲ الی ۶ روز کاری
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="itemGuarantee">
+
+                            <div class="img flex items-center justify-center">
+                                <img src="assets/img(2)/box-tick.png" alt="img cafe 7">
+                            </div>
+
+                            <div class="flex gap-2 items-start font-bold justify-center flex-col">
+
+                                <p class="dark:text-black dark:font-bold"> ضمانت کالا</p>
+
+                                <span class="text-[#28221E] font-normal text-[0.9rem]">
+                                    تا ۷ روز ضمانت عودت کالا
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="itemGuarantee">
+
+                            <div class="img flex items-center justify-center">
+                                <img src="assets/img(2)/headphone.png" alt="img cafe 8">
+                            </div>
+
+                            <div class="flex gap-2 items-start font-bold justify-center flex-col">
+
+                                <p class="dark:text-black dark:font-bold"> پشتیبانی</p>
+
+                                <span class="text-[#28221E] font-normal text-[0.9rem]">
+                                    پشتیبانی ۲۴ ساعته
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="itemGuarantee">
+
+                            <div class="img flex items-center justify-center">
+                                <img src="assets/img(2)/moneys.png" alt="img cafe 9">
+                            </div>
+
+                            <div class="flex gap-2 items-start font-bold justify-center flex-col">
+
+                                <p class="dark:text-black dark:font-bold"> پرداخت</p>
+
+                                <span class="text-[#28221E] font-normal text-[0.9rem]">
+                                    پرداخت امن از درگاه مطمئن
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- active header -->
+    <div class="overlay hidden" data-overlay></div>
+    <aside
+        class="z-[10000] bg-[#28221e] dark:bg-gray-900 dark:border-gray-800 fixed sidebar transition duration-500 ease-in top-0 flex flex-col w-64 h-screen px-5 py-8 overflow-y-auto border-r rtl:border-r-0 rtl:border-l-2 border-[#4b3f38]"
+        data-navbarActive>
+        <a href="#">
+            <img class="w-auto h-7" src="assets/img/Group 5.png" alt="img cafe 9">
+        </a>
+
+        <div class="flex flex-col justify-between flex-1 mt-6">
+            <nav class="-mx-3 space-y-6 ">
+
+                <div data-item-active class="space-y-3 ">
+                    <label class="px-3 text-xs text-gray-500 uppercase dark:text-gray-400">analytics</label>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium"> صفحه اصلی </span>
+                    </a>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium"> خدمات </span>
+                    </a>
+                </div>
+
+                <div data-item-active class="space-y-3 ">
+                    <label class="px-3 text-xs text-gray-500 uppercase dark:text-gray-400"> لیست محصولات و خدمات
+                    </label>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium"> تخفیفات ویژه </span>
+                    </a>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium">پرفروش ترین ها</span>
+                    </a>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="#endFoot">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium"> درباره ما </span>
+                    </a>
+                </div>
+
+                <div class="space-y-3 absolute bottom-[12%] mr-[0.5rem] flex justify-end ml-3">
+
+                    <label class="switch">
+                        <input id="input" type="checkbox" />
+                        <div id="modeToggle" class="slider2 round">
+                            <div class="sun-moon">
+                                <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+
+                                <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="stars">
+                                <svg id="star-1" class="star" viewBox="0 0 20 20">
+                                    <path
+                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                    </path>
+                                </svg>
+                                <svg id="star-2" class="star" viewBox="0 0 20 20">
+                                    <path
+                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                    </path>
+                                </svg>
+                                <svg id="star-3" class="star" viewBox="0 0 20 20">
+                                    <path
+                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                    </path>
+                                </svg>
+                                <svg id="star-4" class="star" viewBox="0 0 20 20">
+                                    <path
+                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
+
+                <div data-item-active class="space-y-3 absolute bottom-[5%] min-w-[91%]">
+
+                    <a href="login.html">
+                        <button class="button mt-[5%]">
+                            <span class="shadow"></span>
+                            <span class="edge"></span>
+                            <div class="front">
+                                <span class="text-[1rem]">ورود به حساب کاربری</span>
+                            </div>
+                        </button>
+                    </a>
+
+                </div>
+            </nav>
+        </div>
+    </aside>
+
+
+    <!-- section -->
+    <section class="section flex flex-col">
+
+        <!-- _________tabNogation___________ -->
+        <div class="tabNogation mx-4 border-1 border-gray-300 rounded-xl laptop:mx-[5rem] pc:mx-[12rem]">
+
+            <input type="radio" name="radio" id="aboutElem" hidden checked>
+            <input type="radio" name="radio" id="vizegiElem" hidden>
+            <input type="radio" name="radio" id="commentElem" hidden>
+
+            <div
+                class="labels relative h-[20%] py-3 mx-auto px-7 flex gap-6 border-b-1 border-gray-300 items-center justify-between text-center w-full ">
+
+                <label for="aboutElem" class="aboutElem lableTab">توضیحات
+                    محصول</label>
+                <label for="vizegiElem" class="vizegiElem lableTab">ویژگی
+                    های محصول</label>
+                <label for="commentElem" class="commentElem lableTab">نظرات
+                    کاربران</label>
+
+                <div
+                    class="activeSlide absolute transition-all duration-300 bottom-[5%] right-[8%] w-[25%] h-[5%] rounded-full bg-[#9E624C] laptop:w-[19%] laptop:right-[3%] pc:w-[15%] pc:right-[2%]">
+                </div>
+
+            </div>
+
+            <div class="contentTabs h-[80%] py-4 px-5 laptop:px-[4rem] smPc:px-[2.5rem]">
+
+                <div class="content contentAbout flex flex-col gap-10 ease-in">
+
+                    <div class="topContent">
+                        <p class="text-[0.9rem] font-[400] text-gray-900 dark:text-white">
+                            لورم ایپسوم1 متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                            افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                            فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                            شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                            ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                            جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                            الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که
+                            تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                            حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد است.
+                        </p>
+                    </div>
+
+                    <div class="centerContent flex flex-col smPc:flex-row gap-4">
+                        <img src="assets/img(2)/image (7).jpg" alt="" loading="lazy"
+                            class="rounded-xl laptop:mx-auto laptop:w-[70%] smPc:w-[49%]">
+                        <img src="assets/img(2)/image (8).jpg" alt="" loading="lazy"
+                            class="rounded-xl laptop:mx-auto laptop:w-[70%] smPc:w-[49%]">
+                    </div>
+
+                    <div class="bottomContent">
+
+                        <ul class="list-disc">
+                            <li class="mr-5 py-2">
+                                <p class="text-[1rem] font-bold">توضیحات محصول </p>
+                            </li>
+                        </ul>
+
+                        <p class="text-[0.9rem] font-[400] text-gray-900 dark:text-white">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="content contentVizegi flex flex-col-reverse gap-10 ease-in">
+
+                    <div class="topContent">
+                        <p class="text-[0.9rem] font-[400] text-gray-900 dark:text-white">
+                            لورم ایپسوم1 متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                            افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                            فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                            شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                            ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                            جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                            الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که
+                            تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                            حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد است.
+                        </p>
+                    </div>
+
+                    <div class="centerContent flex flex-col smPc:flex-row gap-4">
+                        <img src="assets/img(2)/image (7).jpg" alt="" loading="lazy" class="rounded-xl smPc:w-[49%]">
+                        <img src="assets/img(2)/image (8).jpg" alt="" loading="lazy" class="rounded-xl smPc:w-[49%]">
+                    </div>
+
+                    <div class="bottomContent">
+
+                        <ul class="list-disc">
+                            <li class="mr-5 py-2">
+                                <p class="text-[1rem] font-bold">توضیحات محصول </p>
+                            </li>
+                        </ul>
+
+                        <p class="text-[0.9rem] font-[400] text-gray-900 dark:text-white">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="content contentComment flex flex-col gap-10 ease-in">
+
+                    <div class="topContent">
+                        <p class="text-[0.9rem] font-[400] text-gray-900 dark:text-white">
+                            لورم ایپسوم۳ متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                            افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                            فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                            شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                            ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                            جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                            الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که
+                            تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                            حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد است.
+                        </p>
+                    </div>
+
+                    <div class="centerContent flex flex-col smPc:flex-row gap-4">
+                        <img src="assets/img(2)/image (7).jpg" alt="" loading="lazy"
+                            class="rounded-xl laptop:mx-auto laptop:w-[70%] smPc:w-[49%]">
+                        <img src="assets/img(2)/image (8).jpg" alt="" loading="lazy"
+                            class="rounded-xl laptop:mx-auto laptop:w-[70%] smPc:w-[49%]">
+                    </div>
+
+                    <div class="bottomContent">
+
+                        <ul class="list-disc">
+                            <li class="mr-5 py-2">
+                                <p class="text-[1rem] font-bold">توضیحات محصول </p>
+                            </li>
+                        </ul>
+
+                        <p class="text-[0.9rem] font-[400] text-gray-900 dark:text-white">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ___________________________pishnehad -->
+        <div class="About mx-4 mt-[4rem] pl-12 laptop:pl-0 laptop:pr-6 pc:pr-20">
+            <div class="flex justify-center gap-6 items-center laptop:justify-start">
+
+                <div class="img">
+                    <img src="assets/img/ph_coffee-bean-fill.png" alt="COFFEE" loading="lazy" class="w-[100%] mx-auto">
+                </div>
+
+                <div class="info flex flex-col gap-2  justify-center items-start">
+                    <p class="text-[1.2rem] font-bold">
+                        پیشنهاد ها
+                    </p>
+                    <span class="text-[15px]">
+                        محصولات مشابه دیگر را ببینید ...
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ___________card caffe______________ -->
+        <div
+            class="flex py-5 items-center gap-4 laptop:gap-8 mt-[1rem] overflow-x-scroll pc:overflow-hidden pc:mx-[3rem] px-4">
+
+            <div class="max-pc:mr-6 cardCafe">
+
+                <div class="ImgTabNogation m-auto">
+                    <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                        class="max-w-[4rem] w-[100%]">
+                </div>
+
+                <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                    <p class="text-[1rem] text-black font-[800] dark:text-neutral-100">
+                        دانه قهوه باکسی برند Boxilian
+                    </p>
+                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                        دانه قهوه
+                    </span>
+                </div>
+
+                <div class="priceTabNogation flex  flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                        تومان ۲۴۰,۰۰۰
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class=" cardCafe">
+
+                <div class="ImgTabNogation m-auto">
+                    <img src="assets/img/image 13.png" alt="box coffee" loading="lazy" class="max-w-[4rem] w-[100%]">
+                </div>
+
+                <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                    <p class="text-[1rem] text-black font-[800] dark:text-neutral-100">
+                        دانه قهوه باکسی برند Boxilian
+                    </p>
+                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                        دانه قهوه
+                    </span>
+                </div>
+
+                <div class="priceTabNogation flex justify-end flex-col pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                        تومان ۲۴۰,۰۰۰
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class=" cardCafe">
+
+                <div class="ImgTabNogation m-auto">
+                    <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee" loading="lazy"
+                        class="max-w-[5rem] w-[100%]">
+                </div>
+
+                <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                    <p class="text-[1rem] text-black font-[800] dark:text-neutral-100">
+                        دانه قهوه باکسی برند Boxilian
+                    </p>
+                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                        دانه قهوه
+                    </span>
+                </div>
+
+                <div class="priceTabNogation flex justify-end flex-col pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                        تومان ۲۴۰,۰۰۰
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class=" cardCafe">
+
+                <div class="ImgTabNogation m-auto">
+                    <img src="assets/img/image 13.png" alt="box coffee" loading="lazy" class="max-w-[4rem] w-[100%]">
+                </div>
+
+                <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                    <p class="text-[1rem] text-black font-[800] dark:text-neutral-100">
+                        دانه قهوه باکسی برند Boxilian
+                    </p>
+                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                        دانه قهوه
+                    </span>
+                </div>
+
+                <div class="priceTabNogation flex justify-end flex-col pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                        تومان ۲۴۰,۰۰۰
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class=" cardCafe">
+
+                <div class="ImgTabNogation m-auto">
+                    <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                        class="max-w-[4rem] w-[100%]">
+                </div>
+
+                <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                    <p class="text-[1rem] text-black font-[800] dark:text-neutral-100">
+                        دانه قهوه باکسی برند Boxilian
+                    </p>
+                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                        دانه قهوه
+                    </span>
+                </div>
+
+                <div class="priceTabNogation flex justify-end flex-col pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                        تومان ۲۴۰,۰۰۰
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer
+        class="footer mt-[10rem] bg-[#28221E] h-[900px] w-full flex flex-col gap-[0.7rem] laptop:h-[700px] pc:h-[600px]"
+        id="endFoot">
+
+        <!-- top footer -->
+        <div
+            class="topFooter h-[85%] flex flex-col gap-[4rem] mx-auto  py-[3rem] px-[1.5rem] laptop:gap-[5rem] pc:gap-[6rem]">
+
+            <div class="footerAbot flex flex-col items-center justify-center gap-3">
+                <img src="assets/img/Group 5.png" alt="" loading="lazy">
+                <p class="text-center text-white pc:w-[50%]">
+                    لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!
+                </p>
+            </div>
+
+            <div class="footerList">
+                <ul
+                    class="grid grid-cols-2 pc:grid-cols-6 grid-rows-3 pc:grid-rows-1 gap-3 pc:gap-10 text-center gap-y-[3rem]">
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                </ul>
+            </div>
+
+            <div class=" flex flex-col gap-15 laptop:flex-row pc:border-t-1 pc:pt-4 border-[#FFFFFF1A] ">
+
+                <div class="footerInfo flex flex-col gap-7 items-center justify-center mx-auto">
+
+                    <div class="flex flex-row gap-5 items-center justify-center">
+
+                        <img src="assets/img/call.png" class="bg-amber-900 p-[7px] rounded-full" alt="" loading="lazy">
+
+                        <a href="tel:051312345" class="text-[#9E624C]">
+                            1234567 <span class="text-white">- 021</span>
+                        </a>
+
+                    </div>
+
+                    <div class="flex flex-row gap-3 items-center justify-center">
+
+                        <img src="assets/img/gps.png" alt="" loading="lazy"
+                            class="bg-amber-900 p-[7px] rounded-full">
+
+                        <address class="text-white">
+                            مشهد , خیابان وکیل آباد
+                        </address>
+
+                    </div>
+
+                </div>
+
+                <div class="footerImg flex flex-row gap-8 items-center justify-center mx-auto">
+                    <a href="#">
+                        <img src="assets/img/Frame 68.png" alt="" loading="lazy">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/image 15.png" alt="" loading="lazy">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- bottom footer -->
+        <div
+            class="bottomFooter h-[15%] w-full py-[1rem] px-4 bg-[#1A1613] flex flex-col justify-center items-center gap-4 laptop:gap-20 laptop:flex-row-reverse laptop:items-center laptop:px-8">
+
+            <div
+                class="footerLink flex gap-5 flex-row items-center justify-center pc:justify-between mx-auto pc:m-0 laptop:gap-8">
+                <a href="https://t.me/amfweB4042" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-telegram text-[1.4rem] text-white"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amir-mohammad-f-web" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin text-[1.4rem] text-white"></i>
+                </a>
+                <a href="mailto:amir.f.web@gmail.com">
+                    <i class="bi bi-envelope-at-fill text-[1.4rem] text-white"></i>
+                </a>
+            </div>
+
+            <div class="footerCopyRight text-center">
+                <p class="text-white">
+                    &copy; تمام حقوق این وب سایت متعلق امیر محمد نیازی (طراح سایت) میباشد
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- _______loading animation______ -->
+    <div class="dadLoader transition duration-1000 ease-in">
+        <div class="loader">
+            <div class="containerLoader">
+                <div class="coffee-header">
+                    <div class="coffee-header__buttons coffee-header__button-one"></div>
+                    <div class="coffee-header__buttons coffee-header__button-two"></div>
+                    <div class="coffee-header__display"></div>
+                    <div class="coffee-header__details"></div>
+                </div>
+                <div class="coffee-medium">
+                    <div class="coffe-medium__exit"></div>
+                    <div class="coffee-medium__arm"></div>
+                    <div class="coffee-medium__liquid"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                    <div class="coffee-medium__cup"></div>
+                </div>
+                <div class="coffee-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jq js -->
+    <script src="script/jquery.min.js" defer></script>
+
+    <!-- custom js -->
+    <script src="script/myJs(2).js" defer></script>
+
+</body>
+
+</html>

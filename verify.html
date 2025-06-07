@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اریک کافه | فروشگاه آنلاین قهوه و تجهیزات</title>
+    <link rel="stylesheet" href="style/myStyle(4).css">
+    <link rel="stylesheet" href="style/commonStyles.css">
+    <link href="src/output.css" rel="stylesheet">
+    <meta name="description" content=" کافی‌شاپ اریک - محصولات و خدمات. طراحی شده توسط امیر محمد نیازی">
+    <meta name="keywords" content=" قهوه, رزومه, اریک, تخفیف, ">
+    <meta name="author" content=" amir mohammad niazi ">
+    <meta name="theme-color" content="#9E624C">
+    <link rel="icon" href="assets/img/ph_coffee-bean-fill.png" type="image/png">
+</head>
+
+<body dir="rtl" class="bg-[#fff8f5] overflow-x-hidden dark:bg-gray-800 dark:text-white">
+
+
+    <header class="bg-transparent w-[100%] laptop:px-[6rem]">
+        <div class="">
+
+            <nav class="nav flex items-center laptop:justify-between justify-center py-6">
+
+                <div class="centerNav">
+                    <h1>
+                        <a href="index.html">
+                            <img src="assets/img/image 1.png" alt="logo">
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="rightNav max-laptop:hidden laptop:flex flex-row-reverse gap-2">
+                    <div class="">
+                        <img src="assets/img/ph_coffee-bean-fill.png"
+                            class="max-w-[2.8rem] bg-[#F2E5DA] rounded-full p-2" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[#9E624C] font-bold text-[1rem] text-end"> - ۰۲۱</span>
+                        <span class="text-gray-600 text-[0.9rem]">۲۳۴۵۶</span>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!--_________________________________ alert EROR/OK -->
+
+    <!-- alert OK -->
+    <div id="alertOk"
+        class="flex w-full max-w-[80%] mx-auto absolute top-[10%] border-1 border-emerald-500 -translate-x-[100rem] transition duration-800 ease-in laptop:duration-500 overflow-hidden bg-[#f2e5da] rounded-lg shadow-2xl">
+        <div class="flex items-center justify-center w-12 bg-emerald-500">
+            <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z" />
+            </svg>
+        </div>
+
+        <div class="px-4 py-2 -mx-3">
+            <div class="mx-3">
+                <span class="font-semibold text-emerald-700 dark:text-emerald-700">شما وارد شدید !</span>
+                <p class="text-sm text-gray-800"> به حساب کاربری خود خوش آمدید (:</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- alert EROR -->
+    <div id="alertEror"
+        class="flex w-full max-w-[80%] border-1 border-red-500 mx-auto absolute top-[10%] laptop:top-[12%] -translate-x-[100rem] transition duration-800 ease-in laptop:duration-500 overflow-hidden bg-[#f2e5da] rounded-lg shadow-2xl">
+        <div class="flex items-center justify-center w-12 bg-red-500">
+            <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 3.36667C10.8167 3.36667 3.3667 10.8167 3.3667 20C3.3667 29.1833 10.8167 36.6333 20 36.6333C29.1834 36.6333 36.6334 29.1833 36.6334 20C36.6334 10.8167 29.1834 3.36667 20 3.36667ZM19.1334 33.3333V22.9H13.3334L21.6667 6.66667V17.1H27.25L19.1334 33.3333Z" />
+            </svg>
+        </div>
+
+        <div class="px-4 py-2 -mx-3">
+            <div class="mx-3">
+                <span class="font-semibold text-red-500 dark:text-red-400">خطا !</span>
+                <p class="text-[0.8rem] text-gray-800">
+                    لطفا اعداد را به انگلیسی و تمام فیلد ها ار پر کنید
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- __________section and form_______________ -->
+    <section
+        class="section flex flex-col justify-center items-center gap-6 mt-[4rem] px-5 tablet:px-[9rem] laptop:px-[12rem] laptop:max-w-[50rem] laptop:mx-auto">
+
+        <div class="topSection flex flex-col gap-4 items-center justify-center text-center">
+
+            <div class="bg-[#F2E5DA] p-4 rounded-[50%]">
+                <img src="assets/img/ph_coffee-bean-fill.png" alt="">
+            </div>
+
+            <div class="text-center ">
+                <p class="text-[1rem] laptop:text-[1.3rem] mb-2 font-bold text-black dark:text-neutral-100">
+                    ثبت نام / ورود
+                </p>
+                <span class="text-[0.9rem] laptop:text-[1rem] text-gray-400 font-[400]">
+                    تایید کد ورود - اریک کافه
+                </span>
+            </div>
+
+        </div>
+
+        <div class="centerSection flex flex-col gap-2 w-full px-5">
+            <label for="formCall" class="text-right">
+                کد ورود
+            </label>
+
+            <div class="w-full flex flex-row gap-3 justify-center items-center h-[3rem]">
+
+                <input type="text" name="formCall" dir="ltr" maxlength="1" autocomplete="off"
+                    class="formCode w-[20%] text-black bg-white text-[1.1rem] focus:outline-0 border-1 h-full rounded-xl transition duration-100 ease-in p-4 text-center focus:border-[#9E624C] border-gray-200">
+
+                <input type="text" name="formCall" dir="ltr" maxlength="1" autocomplete="off"
+                    class="formCode w-[20%] text-black bg-white text-[1.1rem] focus:outline-0 border-1 h-full rounded-xl transition duration-100 ease-in p-4 text-center focus:border-[#9E624C] border-gray-200">
+
+                <input type="text" name="formCall" dir="ltr" maxlength="1" autocomplete="off"
+                    class="formCode w-[20%] text-black bg-white text-[1.1rem] focus:outline-0 border-1 h-full rounded-xl transition duration-100 ease-in p-4 text-center focus:border-[#9E624C] border-gray-200">
+
+                <input type="text" name="formCall" dir="ltr" maxlength="1" autocomplete="off"
+                    class="formCode w-[20%] text-black bg-white text-[1.1rem] focus:outline-0 border-1 h-full rounded-xl transition duration-100 ease-in p-4 text-center focus:border-[#9E624C] border-gray-200">
+
+                <input type="text" name="formCall" dir="ltr" maxlength="1" autocomplete="off"
+                    class="formCode w-[20%] text-black bg-white text-[1.1rem] focus:outline-0 border-1 h-full rounded-xl transition duration-100 ease-in p-4 text-center focus:border-[#9E624C] border-gray-200">
+
+            </div>
+
+            <p id="contentforward" class="text-center select-none text-gray-400 text-[0.8rem] mt-3">
+                ارسال مجدد کد ( <span id="timer">35</span> )
+            </p>
+        </div>
+
+
+        <a href="#" id="btnLogin"
+            class="w-full z-[1000] text-white max-w-[75%] bg-[#9E624C] rounded-xl py-3 mt-3 text-center mx-4">
+            ثبت نام / ورود
+        </a>
+
+    </section>
+
+    <footer
+        class="footer absolute z-[-1000] bottom-0 left-0 bg-bottom bg-size-[100%_6rem] bg-no-repeat w-full h-[8rem] min-laptop:h-[6rem]">
+        <!-- <img src="assets/img(3)/Vector 1.png" class="relative bottom-0 left-0" alt=""> -->
+    </footer>
+
+
+
+    <!-- _______loading animation______ -->
+    <div class="dadLoader transition duration-1000 ease-in">
+        <div class="loader">
+            <div class="containerLoader">
+                <div class="coffee-header">
+                    <div class="coffee-header__buttons coffee-header__button-one"></div>
+                    <div class="coffee-header__buttons coffee-header__button-two"></div>
+                    <div class="coffee-header__display"></div>
+                    <div class="coffee-header__details"></div>
+                </div>
+                <div class="coffee-medium">
+                    <div class="coffe-medium__exit"></div>
+                    <div class="coffee-medium__arm"></div>
+                    <div class="coffee-medium__liquid"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                    <div class="coffee-medium__cup"></div>
+                </div>
+                <div class="coffee-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jq js -->
+    <script src="script/jquery.min.js" defer></script>
+
+    <!-- custom js -->
+    <script src="script/myJs(4).js" defer></script>
+
+</body>
+
+</html>

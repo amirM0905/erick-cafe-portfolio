@@ -1,0 +1,3061 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اریک کافه | فروشگاه آنلاین قهوه و تجهیزات</title>
+    <link rel="stylesheet" href="style/myStyle.css">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/commonStyles.css">
+    <meta name="description" content=" کافی‌شاپ اریک - محصولات و خدمات. طراحی شده توسط امیر محمد نیازی">
+    <meta name="keywords" content="قهوه, رزومه, اریک, تخفیف,  ">
+    <meta name="author" content=" amir mohammad niazi ">
+    <meta name="theme-color" content="#9E624C">
+    <link rel="icon" href="assets/img/ph_coffee-bean-fill.png" type="image/png">
+    <!-- CDN slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CDN bootstrap link for icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class=" dark:bg-gray-800 dark:text-white scroll-smooth" dir="rtl">
+
+
+    <!--______________________________________________ header -->
+    <header
+        class="bg-[#FFF8F5] relative w-[100%] px-[1rem] laptop:px-10 pc:px-13 dark:bg-gray-700 dark:shadow-[0px_2px_8px_5px_#364153] laptop:shadow-[0px_5px_10px_6px_#fff8f5]">
+        <div class="">
+
+            <nav class="flex justify-around items-center gap-[3rem] py-[1.5rem] laptop:justify-between">
+
+                <div class="rightNav laptop:hidden bg-[#F2E5DA] rounded-full" data-hamber>
+
+                    <label class="hamburger inline w-[3rem]">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 32 32">
+                            <path class="line line-top-bottom"
+                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                            </path>
+                            <path class="line" d="M7 16 27 16"></path>
+                        </svg>
+                    </label>
+
+                </div>
+
+                <!-- 768px -->
+                <div class="rightNav max-laptop:hidden laptop:flex flex-row-reverse gap-2">
+                    <div class="">
+                        <img src="assets/img/ph_coffee-bean-fill.png"
+                            class="max-w-[2.8rem] bg-[#F2E5DA] rounded-full p-2" alt="coffe icon">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[#9E624C] font-bold text-[0.9rem] text-end"> - ۰۲۱</span>
+                        <span class="text-gray-600 font-bold text-[0.8rem]">۲۳۴۵۶</span>
+                    </div>
+                </div>
+
+                <div class="centerNav pc:mr-[3rem]">
+                    <h1>
+                        <a href="myDoc.html">
+                            <img src="assets/img/image 1.png" alt="logo">
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="leftNav laptop:hidden bg-[#F2E5DA] p-[10px] rounded-full cursor-pointer">
+                    <img src="assets/img/bag-2.png" alt="bag">
+                </div>
+
+                <!-- 768px -->
+                <div class="leftNav max-laptop:hidden laptop:flex flex-row-reverse gap-2 items-center justify-center">
+
+                    <div class="leftNav bg-[#9E624C] p-[8px] rounded-full">
+                        <img src="assets/img/bag-3.png" class="max-w-[1.5rem] w-full" alt="bag">
+                    </div>
+
+                    <div class="text-center">
+                        <a href="login.html"
+                            class="border-1 text-[0.6rem] font-bold text-black border-gray-900 rounded-full p-2">
+                            ورود / ثبت نام
+                        </a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- 768px -->
+            <div id="navBarFixed"
+                class="navBarFix max-w-[92%] absolute max-laptop:hidden z-[1000] laptop:flex w-full bg-[#28221E] items-center justify-between px-2 py-3 rounded-full">
+
+                <div class="rightFixed mr-2">
+                    <ul class="flex gap-5 items-center">
+
+                        <li>
+                            <a href="#"
+                                class="text-[0.9rem] pc:text-[1.1rem] text-white text-shadow-[0px_2px_0px_#874c24] font-bold">
+                                صفحه اصلی
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <div>
+                                <button type="button" id="dropdownButton"
+                                    class="inline-flex items-center justify-center w-full text-[0.9rem] font-medium text-white transition-all duration-150 ease-in-out"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    لیست محصولات
+
+                                    <svg class="rtl-svg-margin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div id="dropdownMenu"
+                                class="origin-top-right absolute right-0 mt-2 w-60 rounded-xl shadow-2xl bg-[#30291f] ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
+                                style="display: none;" role="menu" aria-orientation="vertical"
+                                aria-labelledby="dropdownButton">
+                                <div class="py-2" role="none">
+
+                                    <a href="#goOff"
+                                        class="text-white block px-4 py-3 text-sm hover:bg-[#3b312b] transition-colors duration-150 ease-in-out"
+                                        role="menuitem" tabindex="-1" id="menu-item-0">
+                                        <span class="font-bold text-[1rem]"> تخفیفات ویژه </span>
+                                        <span class="block text-xs text-neutral-400">مشاهده و خرید با تخفیف بالا</span>
+                                    </a>
+
+                                    <a href="#por"
+                                        class="text-neutral-200 block px-4 py-3 text-sm hover:bg-[#3b312b] transition-colors duration-150 ease-in-out"
+                                        role="menuitem" tabindex="-1" id="menu-item-1">
+                                        <span class="font-bold text-[1rem]"> پرفروش ترین ها </span>
+                                        <span class="block text-xs text-neutral-400"> محصولات پرفروش ما </span>
+                                    </a>
+
+                                    <div class="border-t border-gray-100 my-1"></div>
+
+                                    <a href="login.html"
+                                        class="text-red-600 block px-4 py-3 text-center hover:bg-[#3b2b2b] transition-colors duration-150 ease-in-out"
+                                        role="menuitem" tabindex="-1" id="menu-item-2">
+                                        <span class="font-bold text-[1rem]">خروج از حساب</span>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li><a href="#trainings" class="text-[0.8rem] pc:text-[0.9rem] text-white "> خدمات </a></li>
+
+                        <li><a href="#endFoot" class="text-[0.8rem] pc:text-[0.9rem] text-white "> درباره ما </a></li>
+
+                        <li><a href="#endFoot" class="text-[0.8rem] pc:text-[0.9rem] text-white "> تماس با ما </a></li>
+
+                    </ul>
+                </div>
+
+                <div
+                    class="leftFixed bg-[#FFFFFF33] cursor-pointer rounded-full flex flex-row-reverse gap-1 justify-center items-center py-1 px-2">
+                    <img src="assets/img/instagram.png" alt="insta icon">
+                    <p class="text-[0.8rem] text-center text-gray-300 mt-[5px]">erick-cafe</p>
+                </div>
+
+            </div>
+
+            <div class="section laptop:hidden w-[100%] h-[26rem] overflow-hidden mt-[2rem]">
+                <div class=" bg-top bg-cover bg-no-repeat w-[100%] h-[100%] rounded-[1rem]"
+                    style="background-image: url('assets/img/image\ \(6\).jpg');">
+
+                    <!-- __________________slider -->
+
+                    <div class="slider relative top-[50%]" style="--width: 300px; --height: 200px; --quantity: 3;">
+                        <div class="list">
+
+                            <div class="item" style="--position: 1">
+                                <div class="card">
+                                    <!-- <p>HELLO THERE</p>
+                                    <p>Am Ashwin.A</p> -->
+                                </div>
+                            </div>
+
+                            <div class=" item" style="--position: 2">
+                                <div class="card">
+                                    <!-- <p>Do follow on Insta</p>
+                                    <p>ashwin_ambar_</p> -->
+                                </div>
+                            </div>
+
+                            <div class="item" style="--position: 3">
+                                <div class="card">
+                                    <!-- <p>Replace cards with images</p>
+                                    <p>for a image slider</p> -->
+                                </div>
+                            </div>
+
+                            <div class="item" style="--position: 4">
+                                <div class="card">
+                                    <!-- <p>Html css only</p>
+                                    <p>Hover to stop the slides</p> -->
+                                </div>
+                            </div>
+
+                            <div class="item" style="--position: 5">
+                                <div class="card">
+                                    <!-- <p>Card 5</p>
+                                    <p>Content for card 5</p> -->
+                                </div>
+                            </div>
+
+                            <div class="item" style="--position: 6">
+                                <div class="card">
+                                    <!-- <p>Card 6</p>
+                                    <p>Content for card 6</p> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 768px -->
+        <div
+            class="section max-laptop:hidden laptop:flex gap-4 w-[100%] h-[18rem] overflow-hidden mt-[6rem] smPc:h-[23rem]">
+
+            <div class=" flex-1/3 bg-top bg-cover bg-no-repeat w-[100%] h-[100%] rounded-[1rem]"
+                style="background-image: url('assets/img/Frame\ 10.png');">
+                <!-- code -->
+            </div>
+
+            <div class="flex-2/3 bg-right bg-cover bg-no-repeat w-[100%] h-[100%] rounded-[1rem]"
+                style="background-image: url('assets/img/image\ \(3\).jpg');">
+                <!-- code -->
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- active header -->
+    <div class="overlay hidden" data-overlay></div>
+    <aside
+        class="z-[10000] bg-[#28221e] dark:bg-gray-900 dark:border-gray-800 fixed sidebar transition duration-500 ease-in top-0 flex flex-col w-64 h-screen px-5 py-8 overflow-y-auto border-r rtl:border-r-0 rtl:border-l-2 border-[#4b3f38]"
+        data-navbarActive>
+        <a href="#">
+            <img class="w-auto h-7" src="assets/img/Group 5.png" alt="logo">
+        </a>
+
+        <div class="flex flex-col justify-between flex-1 mt-6">
+            <nav class="-mx-3 space-y-6 ">
+
+                <div data-item-active class="space-y-3 ">
+                    <label class="px-3 text-xs text-gray-500 uppercase dark:text-gray-400">تب ها</label>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium"> صفحه اصلی </span>
+                    </a>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="#trainings">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium"> خدمات </span>
+                    </a>
+                </div>
+
+                <div data-item-active class="space-y-3 ">
+                    <label class="px-3 text-xs text-gray-500 uppercase dark:text-gray-400"> لیست محصولات و خدمات
+                    </label>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="#goOff">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium"> تخفیفات ویژه </span>
+                    </a>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="#por">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium">پرفروش ترین ها</span>
+                    </a>
+
+                    <a class="flex items-center px-3 py-2 text-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-[#4d413a5e]"
+                        href="#endFoot">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                        </svg>
+
+                        <span class="mx-2 text-sm font-medium"> درباره ما </span>
+                    </a>
+                </div>
+
+                <div class="space-y-3 absolute bottom-[12%] mr-[0.5rem] flex justify-end ml-3">
+
+                    <label class="switch">
+                        <input id="input" type="checkbox" />
+                        <div id="modeToggle" class="slider2 round">
+                            <div class="sun-moon">
+                                <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+
+                                <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="stars">
+                                <svg id="star-1" class="star" viewBox="0 0 20 20">
+                                    <path
+                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                    </path>
+                                </svg>
+                                <svg id="star-2" class="star" viewBox="0 0 20 20">
+                                    <path
+                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                    </path>
+                                </svg>
+                                <svg id="star-3" class="star" viewBox="0 0 20 20">
+                                    <path
+                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                    </path>
+                                </svg>
+                                <svg id="star-4" class="star" viewBox="0 0 20 20">
+                                    <path
+                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
+
+                <div data-item-active class="space-y-3 absolute bottom-[5%] min-w-[91%]">
+
+                    <a href="login.html">
+                        <button class="button mt-[5%]">
+                            <span class="shadow"></span>
+                            <span class="edge"></span>
+                            <div class="front">
+                                <span class="text-[1rem]">ورود به حساب کاربری</span>
+                            </div>
+                        </button>
+                    </a>
+
+                </div>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- ____________________________coffeeEreeck -->
+    <div
+        class="coffeeEreeck bg-[#F2E5DA] dark:bg-gray-600 mx-auto mt-[2rem] smPc:mt-12 dark:shadow-[0px_0px_3px_2px_#4a5565] pc:py-2">
+        <div class="grid grid-cols-4 laptop:grid-cols-12 gap-[5px] mx-auto justify-center items-center">
+            <img src="assets/img/image 5.png" alt="logo" class="w-[90%] mx-auto smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo" class="w-[90%] mx-auto smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo" class="w-[90%] mx-auto smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo" class="w-[90%] mx-auto smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo"
+                class="w-[90%] mx-auto  max-laptop:hidden laptop:flex smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo"
+                class="w-[90%] mx-auto  max-laptop:hidden laptop:flex smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo"
+                class="w-[90%] mx-auto  max-laptop:hidden laptop:flex smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo"
+                class="w-[90%] mx-auto  max-laptop:hidden laptop:flex smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo"
+                class="w-[90%] mx-auto  max-laptop:hidden laptop:flex smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo"
+                class="w-[90%] mx-auto  max-laptop:hidden laptop:flex smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo"
+                class="w-[90%] mx-auto  max-laptop:hidden smPc:flex smPc:w-[76%]">
+            <img src="assets/img/image 5.png" alt="logo"
+                class="w-[90%] mx-auto  max-laptop:hidden smPc:flex smPc:w-[76%]">
+        </div>
+    </div>
+
+    <!-- ___________________________daste bandi -->
+    <div class="About mt-[4rem] px-[1.2rem] laptop:max-w-[32rem] laptop:px-[3rem]">
+        <div class="flex gap-5 justify-center items-center laptop:gap-0">
+
+            <div class="img flex-1/4">
+                <img src="assets/img/ph_coffee-bean-fill.png" alt="COFFEE" loading="lazy"
+                    class="w-full max-w-[3rem] mx-auto">
+            </div>
+
+            <div class="info flex flex-col gap-2  justify-center items-start">
+                <p class="text-[1.2rem] font-bold laptop:text-[1.5rem]">
+                    دسته بندی محصولات
+                </p>
+                <span class="text-[15px] laptop:text-[1rem]">
+                    از میان بهترین ها ، بهترین هارا برای شما فراهم کرده ایم!
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section class="section mt-[4rem]">
+        <div class="">
+
+            <!--___ scroolX___ -->
+            <ul
+                class="scroolX flex mx-auto gap-6 overflow-x-scroll smPc:overflow-x-hidden w-[100%] pr-5 pl-6 smPc:justify-center">
+
+                <li class="listInScroX max-pc:pr-[0.5rem]">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/ph_coffee-bean-bold.png" alt="COFFEE" loading="lazy"
+                            class="w-[100%] mx-auto">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            قهوه ساز ها
+                        </P>
+                    </div>
+
+                </li>
+
+                <li class="listInScroX ">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/Vector.png" alt="COFFEE" loading="lazy"
+                            class="w-[100%] mx-auto max-w-[1.7rem]">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            آسیاب قهوه
+                        </P>
+                    </div>
+
+                </li>
+
+                <li class="listInScroX ">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/mdi_shaker-outline.png" alt="COFFEE" loading="lazy"
+                            class="w-[100%] mx-auto min-w-[2.5rem]">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            ابزار باریستا
+                        </P>
+                    </div>
+
+                </li>
+
+                <li class="listInScroX ">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/Vector (1).png" alt="COFFEE" loading="lazy" class="w-[100%] mx-auto">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            دم آوری قهوه
+                        </P>
+                    </div>
+
+                </li>
+
+                <li class="listInScroX ">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/mdi_drink-ice.png" alt="COFFEE" loading="lazy" class="w-[100%] mx-auto">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            تجهیزات
+                        </P>
+                    </div>
+
+                </li>
+
+                <li class="listInScroX ">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/fluent-emoji-high-contrast_waffle.png" alt="COFFEE" loading="lazy"
+                            class="w-[100%] mx-auto">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            کرپ ساز
+                        </P>
+                    </div>
+
+                </li>
+
+                <li class="listInScroX ">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/Vector (2).png" alt="COFFEE" loading="lazy" class="w-[100%] mx-auto">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            بویلر آب جوش
+                        </P>
+                    </div>
+
+                </li>
+
+                <li class="listInScroX ">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/Vector (3).png" alt="COFFEE" loading="lazy"
+                            class="w-[100%] mx-auto max-w-[1.5rem]">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            سماور صنعتی
+                        </P>
+                    </div>
+
+                </li>
+
+                <li class="listInScroX ">
+
+                    <div
+                        class="topDiv dark:bg-white dark:border-gray-700 flex justify-center items-center py-[1.2rem] px-[1.8rem] border-2 border-gray-200 rounded-2xl  max-h-[5rem] h-[100%] mx-auto max-w-[7rem] w-[100%]">
+                        <img src="assets/img/Vector (4).png" alt="COFFEE" loading="lazy" class="w-[100%] mx-auto">
+                    </div>
+
+                    <div class="bottomDiv">
+                        <P class="font-bold">
+                            شو کیک
+                        </P>
+                    </div>
+
+                </li>
+
+            </ul>
+
+
+            <!-- تخفیفات ویژه -->
+            <a href="#" id="goOff"></a>
+            <div class="offer laptop:hidden bg-center bg-cover bg-no-repeat w-[95%] rounded-3xl px-3 mx-auto h-[16rem] mt-[5rem] tablet:bg-top tablet:w-[80%] tablet:px-5"
+                style="background-image: url('assets/img/img-offer.png');">
+
+                <div
+                    class="contentOff text-white text-shadow-[0px_2px_0px_#874c24] text-[1.4rem] tablet:text-[1.5rem] font-bold relative top-[10%]">
+                    <p class="text-center">
+                        تخفیفات ویژه
+                    </p>
+                </div>
+
+                <div
+                    class="aboutOffer w-[100%] h-[500px] overflow-hidden relative top-[6.5rem] bg-white border-1 border-gray-500 rounded-2xl mx-auto laptop:top-[8.5rem]">
+
+                    <div
+                        class="topAboutOffer pr-4 h-[17%] border-b-1 border-gray-300 overflow-x-scroll flex smPc:overflow-x-hidden">
+
+                        <p class="min-w-[8rem] m-auto text-[1.2rem] font-bold transition duration-500 text-black ">
+                            دسته بندی ها
+                        </p>
+
+                        <span class="min-w-[8rem] spInTopOff ">
+                            <button data-box="cardOffer1" class="itemOffer cursor-pointerr">
+                                دانه قهوه
+                            </button>
+                        </span>
+
+                        <span class="min-w-[8rem] spInTopOff">
+                            <button data-box="cardOffer2" class="itemOffer cursor-pointer">
+                                آسیاب قهوه
+                            </button>
+                        </span>
+
+                        <span class="min-w-[8rem] spInTopOff">
+                            <button data-box="cardOffer3" class="itemOffer cursor-pointer">
+                                ابزار باریستا
+                            </button>
+                        </span>
+
+                        <span class="min-w-[9rem] spInTopOff">
+                            <button data-box="cardOffer4" class="itemOffer cursor-pointer">
+                                بویلر آب جوش
+                            </button>
+                        </span>
+
+                        <span
+                            class="min-w-[11rem] spInTopOff m-auto text-[1.1rem] font-[600] transition duration-500 text-[#9B9895] ">
+                            <button data-box="cardOffer5" class="itemOffer cursor-pointer">
+                                تجهیزات کافه و رستوران
+                            </button>
+                        </span>
+
+                    </div>
+
+                    <div class="bottomAboutOffer px-6 h-[83%] flex items-center justify-center relative">
+
+                        <a href="product.html">
+                            <div class="cardOffer cardOffer1">
+                                <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                    <p
+                                        class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                        40٪
+                                    </p>
+                                </div>
+
+                                <div class="ImgOffer m-auto">
+                                    <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                        class="max-w-[6rem] w-[100%]">
+                                </div>
+
+                                <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                    <p class="text-[1.1rem] text-black font-[800]">
+                                        دانه قهوه باکسی برند Boxilian
+                                    </p>
+                                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                        دانه قهوه
+                                    </span>
+                                </div>
+
+                                <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[9rem] mb-[1rem]">
+                                    <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                        تومان ۳۴۰,۰۰۰
+                                    </p>
+                                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                        تومان ۲۴۰,۰۰۰
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="product.html">
+                            <div class="cardOffer cardOffer2">
+                                <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                    <p
+                                        class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                        40٪
+                                    </p>
+                                </div>
+
+                                <div class="ImgOffer m-auto">
+                                    <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                        class="max-w-[6rem] w-[100%]">
+                                </div>
+
+                                <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                    <p class="text-[1.1rem] text-black font-[800]">
+                                        دانه قهوه باکسی برند Boxilian
+                                    </p>
+                                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                        دانه قهوه
+                                    </span>
+                                </div>
+
+                                <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[9rem] mb-[1rem]">
+                                    <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                        تومان ۳۴۰,۰۰۰
+                                    </p>
+                                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                        تومان ۲۴۰,۰۰۰
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="product.html">
+                            <div class="cardOffer cardOffer3">
+
+                                <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                    <p
+                                        class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                        40٪
+                                    </p>
+                                </div>
+
+                                <div class="ImgOffer m-auto">
+                                    <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                        loading="lazy" class="max-w-[6rem] w-[100%]">
+                                </div>
+
+                                <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                    <p class="text-[1.1rem] text-black font-[800]">
+                                        دانه قهوه باکسی برند Boxilian
+                                    </p>
+                                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                        دانه قهوه
+                                    </span>
+                                </div>
+
+                                <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[9rem] mb-[1rem]">
+                                    <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                        تومان ۳۴۰,۰۰۰
+                                    </p>
+                                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                        تومان ۲۴۰,۰۰۰
+                                    </p>
+                                </div>
+
+
+                            </div>
+                        </a>
+
+                        <a href="product.html">
+                            <div class="cardOffer cardOffer4">
+
+                                <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                    <p
+                                        class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                        40٪
+                                    </p>
+                                </div>
+
+                                <div class="ImgOffer m-auto">
+                                    <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                        class="max-w-[6rem] w-[100%]">
+                                </div>
+
+                                <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                    <p class="text-[1.1rem] text-black font-[800]">
+                                        دانه قهوه باکسی برند Boxilian
+                                    </p>
+                                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                        دانه قهوه
+                                    </span>
+                                </div>
+
+                                <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[9rem] mb-[1rem]">
+                                    <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                        تومان ۳۴۰,۰۰۰
+                                    </p>
+                                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                        تومان ۲۴۰,۰۰۰
+                                    </p>
+                                </div>
+
+
+                            </div>
+                        </a>
+
+                        <a href="product.html">
+                            <div class="cardOffer cardOffer5">
+
+                                <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                    <p
+                                        class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                        40٪
+                                    </p>
+                                </div>
+
+                                <div class="ImgOffer m-auto">
+                                    <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                        class="max-w-[6rem] w-[100%]">
+                                </div>
+
+                                <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                    <p class="text-[1.1rem] text-black font-[800]">
+                                        دانه قهوه باکسی برند Boxilian
+                                    </p>
+                                    <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                        دانه قهوه
+                                    </span>
+                                </div>
+
+                                <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[9rem] mb-[1rem]">
+                                    <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                        تومان ۳۴۰,۰۰۰
+                                    </p>
+                                    <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                        تومان ۲۴۰,۰۰۰
+                                    </p>
+                                </div>
+
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- تخفیفات ویژه -768 -->
+            <div class="offer max-laptop:hidden laptop:block bg-center bg-cover bg-no-repeat w-[95%] rounded-[3rem] px-3 mx-auto h-[18rem] mt-[5rem] tablet:bg-top tablet:w-[80%] tablet:px-5"
+                style="background-image: url('assets/img/img-offer.png');">
+
+                <div
+                    class="contentOff text-white text-shadow-[0px_2px_0px_#874c24] text-[1.8rem] pc:text-[2rem] font-bold relative top-[10%]">
+                    <p class="text-center">
+                        تخفیفات ویژه
+                    </p>
+                </div>
+
+                <div
+                    class="aboutOffer w-[100%] h-[500px] overflow-hidden relative bg-white border-1 border-gray-300 rounded-2xl mx-auto top-[5.5rem] pc:px-6 shadow-[0px_3px_17px_-7px_gray]">
+
+                    <div
+                        class="topAboutOffer pr-4 h-[17%] border-b-1 border-gray-300 overflow-x-scroll pc:overflow-x-hidden flex">
+
+                        <p class="min-w-[8rem] m-auto text-[1.2rem] font-bold transition duration-500 text-black ">
+                            دسته بندی ها
+                        </p>
+
+                        <span class="min-w-[8rem] spInTopOff">
+                            <button data-div-off="offerDiv1" class="itemBtn cursor-pointerr">
+                                دانه قهوه
+                            </button>
+                        </span>
+
+                        <span class="min-w-[8rem] spInTopOff">
+                            <button data-div-off="offerDiv2" class="itemBtn cursor-pointer">
+                                آسیاب قهوه
+                            </button>
+                        </span>
+
+                        <span class="min-w-[8rem] spInTopOff">
+                            <button data-div-off="offerDiv3" class="itemBtn cursor-pointer">
+                                ابزار باریستا
+                            </button>
+                        </span>
+
+                        <span class="min-w-[9rem] spInTopOff">
+                            <button data-div-off="offerDiv4" class="itemBtn cursor-pointer">
+                                بویلر آب جوش
+                            </button>
+                        </span>
+
+                        <span class="min-w-[11rem] spInTopOff">
+                            <button data-div-off="offerDiv5" class="itemBtn cursor-pointer">
+                                تجهیزات کافه و رستوران
+                            </button>
+                        </span>
+
+                    </div>
+
+                    <div class="bottomAboutOffer px-6 h-[83%] flex items-center justify-center relative">
+
+                        <div class="offerDiv offerDiv1 ">
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="offerDiv offerDiv2">
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="offerDiv offerDiv3">
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                            loading="lazy" class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                            loading="lazy" class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                            loading="lazy" class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="offerDiv offerDiv4">
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="offerDiv offerDiv5">
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="itemInOffDiv">
+                                    <div class="boxOfferNumber absolute top-[6%] left-[6%]">
+                                        <p
+                                            class="py-[3px] px-[1rem] text-[0.9rem] bg-[#28221E] rounded-full font-bold text-white">
+                                            40٪
+                                        </p>
+                                    </div>
+
+                                    <div class="ImgOffer m-auto">
+                                        <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                            class="max-w-[6rem] w-[100%]">
+                                    </div>
+
+                                    <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                        <p class="text-[1.1rem] text-black font-[800]">
+                                            دانه قهوه باکسی برند Boxilian
+                                        </p>
+                                        <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                            دانه قهوه
+                                        </span>
+                                    </div>
+
+                                    <div class="priceOffer flex flex-col float-left pl-[0.9rem] mb-[1rem]">
+                                        <p class="text-[0.8rem] text-left text-gray-400 line-through decoration-2">
+                                            تومان ۳۴۰,۰۰۰
+                                        </p>
+                                        <p class="text-[1rem] text-left text-[#9E624C] font-[700]">
+                                            تومان ۲۴۰,۰۰۰
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ___BANNER___ -->
+            <div
+                class="banner laptop:hidden flex flex-col px-[1rem] gap-[1rem] mt-[30rem] mx-auto items-center justify-center h-[500px] laptop:px-[5rem]">
+
+                <div class="topBanner h-[25%] bg-[#28221E] rounded-2xl w-[100%] flex items-center justify-center">
+                    <p class="text-[1.3rem] text-white font-bold text-center">
+                        جایگاه بنر
+                    </p>
+                </div>
+
+                <div
+                    class="centerBanner h-[60%] w-[100%] flex flex-row justify-center items-center gap-[1rem] rounded-2xl">
+
+                    <div class="w-[50%] h-[100%] bg-[#28221E] rounded-2xl flex items-center justify-center text-center">
+                        <p class="text-[1.3rem] text-white font-bold text-center">
+                            جایگاه بنر
+                        </p>
+                    </div>
+
+                    <div class="w-[50%] h-[100%] bg-[#28221E] rounded-2xl flex items-center justify-center text-center">
+                        <p class="text-[1.3rem] text-white font-bold text-center">
+                            جایگاه بنر
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="bottomBanner h-[25%] bg-[#28221E] rounded-2xl w-[100%] flex items-center justify-center">
+                    <p class="text-[1.3rem] text-white font-bold text-center">
+                        جایگاه بنر
+                    </p>
+                </div>
+
+
+            </div>
+
+            <!-- ___BANNER__768___ -->
+            <div
+                class="banner  max-laptop:hidden laptop:flex flex-row px-[1rem] gap-[1rem] mt-[30rem] mx-auto items-center justify-center laptop:px-[6rem]">
+
+                <div class="itemInBanner">
+                    <p class="text-[1.3rem] text-white font-bold text-center">
+                        جایگاه بنر
+                    </p>
+                </div>
+
+                <div class="itemInBanner">
+                    <p class="text-[1.3rem] text-white font-bold text-center">
+                        جایگاه بنر
+                    </p>
+                </div>
+
+                <div class="itemInBanner">
+                    <p class="text-[1.3rem] text-white font-bold text-center">
+                        جایگاه بنر
+                    </p>
+                </div>
+
+                <div class="itemInBanner">
+                    <p class="text-[1.3rem] text-white font-bold text-center">
+                        جایگاه بنر
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- پرفروش ترین ها -->
+            <a href="#" class="opacity-0" id="por"></a>
+            <div class="tabNogation mt-[5rem] px-4 laptop:px-[6rem]">
+
+                <div
+                    class="selectTabNogation flex flex-col smPc:flex-row border-1 border-gray-200 dark:border-gray-950 rounded-2xl smPc:rounded-full px-4 py-5 smPc:py-3 smPc:px-3 smPc:gap-3">
+
+                    <div class="topAboutNogation flex flex-col smPc:flex-row justify-center items-center gap-[0.7rem]">
+                        <img src="assets/img/ph_coffee-bean-fill.png" alt="coffee logo" loading="lazy">
+                        <div
+                            class="flex flex-col gap-[0.7rem] justify-center items-center smPc:items-start smPc:gap-[0.5rem]">
+                            <p class="font-[700] dark:text-white text-[1.1rem] text-black ">
+                                پرفروش ترین ها
+                            </p>
+                            <span class="font-[600] text-[0.9rem] text-gray-500">
+                                پرفروش ترین محصولات اریک کافه
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bottomAboutNogation bg-[#E9E9E8] dark:bg-gray-700 mt-6 smPc::mt-0 rounded-[0.6rem] py-[0.9rem] px-[0.9rem] relative smPc:min-w-[45rem] smPc:m-auto">
+
+                        <input type="radio" name="radio" id="all" hidden checked>
+                        <input type="radio" name="radio" id="asiab" hidden>
+                        <input type="radio" name="radio" id="abzar" hidden>
+                        <input type="radio" name="radio" id="boiler" hidden>
+                        <input type="radio" name="radio" id="shoCake" hidden>
+
+                        <div
+                            class=" flex gap-[2rem] items-center justify-center text-center laptop:gap-[5rem] laptop:justify-around">
+
+                            <label for="all" class="tabButton all text-[14px] font-[600] z-50 cursor-pointer"
+                                data-target="cardAll">همه دسته بندی
+                                ها</label>
+                            <label for="asiab" class="tabButton asiab text-[14px] font-[600] z-50 cursor-pointer"
+                                data-target="cardAsiab">آسیاب
+                                قهوه</label>
+                            <label for="abzar" class="tabButton abzar text-[14px] font-[600] z-50 cursor-pointer"
+                                data-target="cardAbzar">ابزار
+                                باریستا</label>
+                            <label for="boiler"
+                                class="tabButton boiler text-[14px] font-[600] z-50 cursor-pointer max-smPc:hidden smPc:block"
+                                data-target="boiler"> بویلر آبجوش </label>
+                            <label for="shoCake"
+                                class="tabButton shoCake text-[14px] font-[600] z-50 cursor-pointer max-smPc:hidden smPc:block"
+                                data-target="shoCake"> شو کیک </label>
+
+                        </div>
+
+                        <div
+                            class="activeSlide absolute w-[6rem] h-[3.5rem] rounded-[0.5rem] bg-[#FFFFFF] dark:bg-gray-400 right-[5%] top-[8px] z-10 transition-all duration-300 laptop:top-[10%] laptop:right-[7.5%] laptop:h-[2.5rem] laptop:w-[8rem] smPc:right-[1%]">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="cardTabNogation cardAll  grid h-[45rem] mt-12 gap-x-[1rem] gap-y-[1rem] grid-cols-2 smPc:grid-cols-4 smPc:px-0 smPc:gap-4 smPc:gap-y-12 grid-rows-2 gap-[4rem] justify-center items-center mx-auto laptop:px-[4rem] laptop:gap-[4rem]">
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-laptop:max-w-[4rem] max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-laptop:max-w-[4rem] max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-laptop:max-w-[4rem] max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-laptop:max-w-[4rem] max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div class="itemInTab-responsive">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div class="itemInTab-responsive">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div class=" itemInTab-responsive">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div class=" itemInTab-responsive">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div
+                    class="cardTabNogation cardAsiab  grid h-[45rem] mt-12 gap-x-[1rem] gap-y-[1rem] grid-cols-2 smPc:grid-cols-4 smPc:px-0 smPc:gap-4 smPc:gap-y-12 grid-rows-2 gap-[4rem] justify-center items-center mx-auto laptop:px-[4rem] laptop:gap-[4rem]">
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-laptop:max-w-[4rem]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-laptop:max-w-[4rem]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-laptop:max-w-[4rem]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-laptop:max-w-[4rem]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div class="itemInTab-responsive">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div class="itemInTab-responsive">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div class="itemInTab-responsive">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div
+                            class="m-auto w-[100%] dark:bg-[#263347] dark:border-0 h-[20rem] border-1 border-gray-200 rounded-2xl relative max-smPc:hidden smPc:flex flex-col gap-[1rem]">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div
+                    class="cardTabNogation cardAbzar  grid h-[45rem] mt-12 gap-x-[1rem] gap-y-[1rem] grid-cols-2 smPc:grid-cols-4 smPc:px-0 smPc:gap-4 smPc:gap-y-12 grid-rows-2 gap-[4rem] justify-center items-center mx-auto laptop:px-[4rem] laptop:gap-[4rem]">
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                    loading="lazy" class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                    loading="lazy" class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                    loading="lazy" class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                    loading="lazy" class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="max-laptop:text-[1rem] text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div class="itemInTab-responsive">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                    loading="lazy" class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div
+                            class="m-auto w-[100%] dark:bg-[#263347] dark:border-0 h-[20rem] border-1 border-gray-200 rounded-2xl relative max-smPc:hidden smPc:flex flex-col gap-[1rem]">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                    loading="lazy" class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div
+                            class="m-auto w-[100%] dark:bg-[#263347] dark:border-0 h-[20rem] border-1 border-gray-200 rounded-2xl relative max-smPc:hidden smPc:flex flex-col gap-[1rem]">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                    loading="lazy" class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <!-- 1024px -->
+                    <a href="product.html">
+                        <div
+                            class="m-auto w-[100%] dark:bg-[#263347] dark:border-0 h-[20rem] border-1 border-gray-200 rounded-2xl relative max-smPc:hidden smPc:flex flex-col gap-[1rem]">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/Screenshot__44_-removebg-preview.png" alt="box coffee"
+                                    loading="lazy" class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- 1024px -->
+                <div
+                    class="cardTabNogation boiler  smPc:grid h-[45rem] mt-12 gap-x-[1rem] gap-y-[1rem] grid-cols-4 grid-rows-2 gap-[4rem] justify-center items-center mx-auto">
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-w-[7rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-w-[7rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-w-[7rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-w-[7rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-w-[7rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-w-[7rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-w-[7rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13.png" alt="box coffee" loading="lazy"
+                                    class="max-w-[7rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- 1024px -->
+                <div
+                    class="cardTabNogation shoCake  smPc:grid h-[45rem] mt-12 gap-x-[1rem] gap-y-[1rem] grid-cols-4 grid-rows-2 gap-[4rem] justify-center items-center mx-auto">
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgTabNogation m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutTabNogation px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceTabNogation flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="product.html">
+                        <div class="itemInTab">
+
+                            <div class="ImgOffer m-auto">
+                                <img src="assets/img/image 13 (1).png" alt="box coffee" loading="lazy"
+                                    class="max-w-[5rem] w-[100%]">
+                            </div>
+
+                            <div class="aboutOffer px-[0.9rem] flex float-right flex-col gap[0.5rem]">
+                                <p class="text-[1.1rem] text-black dark:text-white font-[800]">
+                                    دانه قهوه باکسی برند Boxilian
+                                </p>
+                                <span class="text-[0.9rem] text-[#9B9895] font-[400]">
+                                    دانه قهوه
+                                </span>
+                            </div>
+
+                            <div class="priceOffer flex flex-col float-left pl-[0.9rem] mr-[0.5rem] mb-[1rem]">
+                                <p class="text-[1rem] text-[#9E624C] font-[700]">
+                                    240,000 تومان
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- آموزش ها -->
+            <a href="#" class="opacity-0" id="trainings"></a>
+            <div class="trainings relative bg-top bg-cover bg-no-repeat w-[95%] rounded-3xl px-2 mx-auto h-[13rem] pc:h-[16rem] mt-[7rem] laptop:px-0 laptop:w-[80%] pc:flex pc:justify-center"
+                style="background-image: url('assets/img/img-trainings.png');">
+
+                <div
+                    class="contentOff text-white text-[1.4rem] tablet:text-[1.6rem] laptop:text-[2rem] font-bold relative top-[15%]">
+                    <p class="text-center text-shadow-[0px_2px_0px_#874c24]">
+                        آموزش های اریک کافه
+                    </p>
+                </div>
+
+                <div class="tutorials-section pc:hidden mt-[8rem]">
+
+                    <div class="container mx-auto">
+
+                        <div class="swiper tutorial-swiper-container">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide mt-3">
+                                    <div
+                                        class="tutorial-card max-w-[20rem] mx-auto p-1 w-full flex flex-col gap-6 transition duration-300 border-1 border-gray-300 overflow-hidden rounded-xl bg-white">
+
+                                        <div class="ImgTrainings m-auto w-full">
+                                            <img src="assets/img/image.jpg" alt="box coffee" loading="lazy"
+                                                class="rounded-xl w-full">
+                                        </div>
+
+                                        <div class="aboutTrainings px-[0.9rem]">
+                                            <p class="text-[1rem] text-black font-[800]">
+                                                لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی
+                                                مینویسند!
+                                            </p>
+                                        </div>
+
+                                        <div class="priceTrainings flex flex-row px-[0.9rem] mb-[1rem] justify-between">
+                                            <p class="text-[0.8rem] text-[#9E624C] cursor-pointer">
+                                                مشاهده بیشتر
+                                            </p>
+                                            <p class="text-[0.8rem] text-[#9B9895] font-[500]">
+                                                ۱۹ اردیبهشت ۱۴۰4
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide mt-3">
+                                    <div
+                                        class="tutorial-card max-w-[20rem] mx-auto p-1 w-full flex flex-col gap-6 transition duration-300 border-1 border-gray-300 overflow-hidden rounded-xl bg-white">
+
+                                        <div class="ImgTrainings m-auto w-full">
+                                            <img src="assets/img/image (2).jpg" alt="box coffee" loading="lazy"
+                                                class="rounded-xl w-full">
+                                        </div>
+
+                                        <div class="aboutTrainings px-[0.9rem]">
+                                            <p class="text-[1rem] text-black font-[800]">
+                                                لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی
+                                                مینویسند!
+                                            </p>
+                                        </div>
+
+                                        <div class="priceTrainings flex flex-row px-[0.9rem] mb-[1rem] justify-between">
+                                            <p class="text-[0.8rem] text-[#9E624C] cursor-pointer">
+                                                مشاهده بیشتر
+                                            </p>
+                                            <p class="text-[0.8rem] text-[#9B9895] font-[500]">
+                                                ۱۹ اردیبهشت ۱۴۰4
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide mt-3">
+                                    <div
+                                        class="tutorial-card max-w-[20rem] mx-auto p-1 w-full flex flex-col gap-6 transition duration-300 border-1 border-gray-300 overflow-hidden rounded-xl bg-white">
+
+                                        <div class="ImgTrainings m-auto w-full">
+                                            <img src="assets/img/image (10).jpg" alt="box coffee" loading="lazy"
+                                                class="rounded-xl w-full">
+                                        </div>
+
+                                        <div class="aboutTrainings px-[0.9rem]">
+                                            <p class="text-[1rem] text-black font-[800]">
+                                                لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی
+                                                مینویسند!
+                                            </p>
+                                        </div>
+
+                                        <div class="priceTrainings flex flex-row px-[0.9rem] mb-[1rem] justify-between">
+                                            <p class="text-[0.8rem] text-[#9E624C] cursor-pointer">
+                                                مشاهده بیشتر
+                                            </p>
+                                            <p class="text-[0.8rem] text-[#9B9895] font-[500]">
+                                                ۱۹ اردیبهشت ۱۴۰4
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide mt-3">
+                                    <div
+                                        class="tutorial-card max-w-[20rem] mx-auto p-1 w-full flex flex-col gap-6 transition duration-300 border-1 border-gray-300 overflow-hidden rounded-xl bg-white">
+
+                                        <div class="ImgTrainings m-auto  w-full">
+                                            <img src="assets/img/image.jpg" alt="box coffee" loading="lazy"
+                                                class="rounded-xl  w-full">
+                                        </div>
+
+                                        <div class="aboutTrainings px-[0.9rem]">
+                                            <p class="text-[1rem] text-black font-[800]">
+                                                لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی
+                                                مینویسند!
+                                            </p>
+                                        </div>
+
+                                        <div class="priceTrainings flex flex-row px-[0.9rem] mb-[1rem] justify-between">
+                                            <p class="text-[0.8rem] text-[#9E624C] cursor-pointer">
+                                                مشاهده بیشتر
+                                            </p>
+                                            <p class="text-[0.8rem] text-[#9B9895] font-[500]">
+                                                ۱۹ اردیبهشت ۱۴۰4
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1280px -->
+                <div class="flex gap-5 absolute top-[60%] max-pc:hidden">
+
+                    <div class="tutorial-card">
+
+                        <div class="ImgTrainings m-auto w-full pc:h-full">
+                            <img src="assets/img/image.jpg" alt="box coffee" loading="lazy"
+                                class="rounded-xl w-full pc:h-full">
+                        </div>
+
+                        <div class="aboutTrainings px-[0.9rem]">
+                            <p class="text-[1.1rem] text-black font-[800]">
+                                لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی
+                                مینویسند!
+                            </p>
+                        </div>
+
+                        <div class="priceTrainings flex flex-row px-[0.9rem] mb-[1rem] justify-between">
+                            <p class=" text-[1rem] text-[#9E624C] cursor-pointer">
+                                مشاهده بیشتر
+                            </p>
+                            <p class="text-[0.8rem] text-[#9B9895] font-[500]">
+                                ۱۹ اردیبهشت ۱۴۰4
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="tutorial-card">
+
+                        <div class="ImgTrainings m-auto w-full">
+                            <img src="assets/img/image (2).jpg" alt="box coffee" loading="lazy"
+                                class="rounded-xl w-full">
+                        </div>
+
+                        <div class="aboutTrainings px-[0.9rem]">
+                            <p class="text-[1.1rem] text-black font-[800]">
+                                لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی
+                                مینویسند!
+                            </p>
+                        </div>
+
+                        <div class="priceTrainings flex flex-row px-[0.9rem] mb-[1rem] justify-between">
+                            <p class="text-[1rem] text-[#9E624C] cursor-pointer">
+                                مشاهده بیشتر
+                            </p>
+                            <p class="text-[0.8rem] text-[#9B9895] font-[500]">
+                                ۱۹ اردیبهشت ۱۴۰4
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="tutorial-card">
+
+                        <div class="ImgTrainings m-auto w-full">
+                            <img src="assets/img/image (10).jpg" alt="box coffee" loading="lazy"
+                                class="rounded-xl w-full">
+                        </div>
+
+                        <div class="aboutTrainings px-[0.9rem]">
+                            <p class="text-[1.1rem] text-black font-[800]">
+                                لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی
+                                مینویسند!
+                            </p>
+                        </div>
+
+                        <div class="priceTrainings flex flex-row px-[0.9rem] mb-[1rem] justify-between">
+                            <p class="text-[1rem] text-[#9E624C] cursor-pointer">
+                                مشاهده بیشتر
+                            </p>
+                            <p class="text-[0.8rem] text-[#9B9895] font-[500]">
+                                ۱۹ اردیبهشت ۱۴۰4
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer
+        class="footer0 mt-[25rem] bg-[#28221E] h-[900px] w-full flex flex-col gap-[0.7rem] laptop:h-[700px] pc:h-[600px]"
+        id="endFoot">
+
+        <!-- top footer -->
+        <div
+            class="topFooter h-[85%] flex flex-col gap-[4rem] mx-auto  py-[3rem] px-[1.5rem] laptop:gap-[5rem] pc:gap-[6rem]">
+
+            <div class="footerAbot flex flex-col items-center justify-center gap-3">
+                <img src="assets/img/Group 5.png" alt="logo care" loading="lazy">
+                <p class="text-center text-white pc:w-[50%]">
+                    لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!
+                </p>
+            </div>
+
+            <div class="footerList">
+                <ul
+                    class="grid grid-cols-2 pc:grid-cols-6 grid-rows-3 pc:grid-rows-1 gap-3 pc:gap-10 text-center gap-y-[3rem]">
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                    <li><a href="#" class="text-white">دسته بندی کلی یک</a></li>
+                </ul>
+            </div>
+
+            <div class=" flex flex-col gap-15 laptop:flex-row pc:border-t-1 pc:pt-4 border-[#FFFFFF1A] ">
+
+                <div class="footerInfo flex flex-col gap-7 items-center justify-center mx-auto">
+
+                    <div class="flex flex-row gap-5 items-center justify-center">
+
+                        <img src="assets/img/call.png" class="bg-amber-900 p-[7px] rounded-full" alt="map"
+                            loading="lazy">
+
+                        <a href="tel:051312345" class="text-[#9E624C]">
+                            1234567 <span class="text-white">- 021</span>
+                        </a>
+
+                    </div>
+
+                    <div class="flex flex-row gap-3 items-center justify-center">
+
+                        <img src="assets/img/gps.png" alt="logo insta" loading="lazy"
+                            class="bg-amber-900 p-[7px] rounded-full">
+
+                        <address class="text-white">
+                            مشهد , خیابان وکیل آباد
+                        </address>
+
+                    </div>
+
+                </div>
+
+                <div class="footerImg flex flex-row gap-8 items-center justify-center mx-auto">
+                    <a href="#">
+                        <img src="assets/img/Frame 68.png" loading="lazy" alt="ads">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/image 15.png" loading="lazy" alt="ads">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- bottom footer -->
+        <div
+            class="bottomFooter h-[15%] w-full py-[1rem] px-4 bg-[#1A1613] flex flex-col justify-center items-center gap-4 laptop:gap-20 laptop:flex-row-reverse laptop:items-center laptop:px-8">
+
+            <div
+                class="footerLink flex gap-5 flex-row items-center justify-center pc:justify-between mx-auto pc:m-0 laptop:gap-8">
+                <a href="https://t.me/amfweB4042" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-telegram text-[1.4rem] text-white"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amir-mohammad-f-web" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin text-[1.4rem] text-white"></i>
+                </a>
+                <a href="mailto:amir.f.web@gmail.com">
+                    <i class="bi bi-envelope-at-fill text-[1.4rem] text-white"></i>
+                </a>
+            </div>
+
+            <div class="footerCopyRight text-center">
+                <p class="text-white">
+                    &copy; تمام حقوق این وب سایت متعلق امیر محمد نیازی (طراح سایت) میباشد
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- _______loading animation______ -->
+    <div class="dadLoader">
+        <div class="loader">
+            <div class="containerLoader">
+                <div class="coffee-header">
+                    <div class="coffee-header__buttons coffee-header__button-one"></div>
+                    <div class="coffee-header__buttons coffee-header__button-two"></div>
+                    <div class="coffee-header__display"></div>
+                    <div class="coffee-header__details"></div>
+                </div>
+                <div class="coffee-medium">
+                    <div class="coffe-medium__exit"></div>
+                    <div class="coffee-medium__arm"></div>
+                    <div class="coffee-medium__liquid"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                    <div class="coffee-medium__cup"></div>
+                </div>
+                <div class="coffee-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery JS -->
+    <script src="script/jquery.min.js" defer></script>
+
+    <!-- CDN slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <!-- custop JS -->
+    <script src="script/myJS.js" defer></script>
+
+</body>
+
+</html>

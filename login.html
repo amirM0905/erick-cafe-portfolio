@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اریک کافه | فروشگاه آنلاین قهوه و تجهیزات</title>
+    <link rel="stylesheet" href="style/myStyle(3).css">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/commonStyles.css">
+    <meta name="description" content=" کافی‌شاپ اریک - محصولات و خدمات. طراحی شده توسط امیر محمد نیازی">
+    <meta name="keywords" content=" قهوه, رزومه, اریک, تخفیف, ">
+    <meta name="author" content=" amir mohammad niazi ">
+    <meta name="theme-color" content="#9E624C">
+    <link rel="icon" href="assets/img/ph_coffee-bean-fill.png" type="image/png">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body dir="rtl" class="bg-[#fff8f5] dark:bg-gray-800 dark:text-white">
+
+
+
+    <header class="bg-transparent w-[100%] laptop:px-[6rem]">
+        <div class="">
+
+            <nav class="nav flex items-center laptop:justify-between justify-center py-6">
+
+                <div class="centerNav">
+                    <h1>
+                        <a href="index.html">
+                            <img src="assets/img/image 1.png" alt="logo">
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="rightNav max-laptop:hidden laptop:flex flex-row-reverse gap-2">
+                    <div class="">
+                        <img src="assets/img/ph_coffee-bean-fill.png"
+                            class="max-w-[2.8rem] bg-[#F2E5DA] rounded-full p-2" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[#9E624C] font-bold text-[1rem] text-end"> - ۰۲۱</span>
+                        <span class="text-gray-600 text-[0.9rem]">۲۳۴۵۶</span>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <section
+        class="section flex flex-col justify-center items-center mx-auto gap-7 mt-[3rem] px-5 tablet:px-[7rem] laptop:px-[9rem] smPc:max-w-[65%]">
+
+        <div class="topSection flex flex-col gap-4 items-center justify-center text-center">
+
+            <div class="bg-[#F2E5DA] p-4 rounded-[50%]">
+                <img src="assets/img/ph_coffee-bean-fill.png" alt="">
+            </div>
+
+            <div class="text-center ">
+                <p class="text-[1rem] mb-2 font-bold text-black dark:text-neutral-100">
+                    ثبت نام / ورود
+                </p>
+                <span class="text-[0.9rem] text-gray-400 font-[400]">
+                    برای ورود یا ثبت نام شماره تماس خود را وارد کنید!
+                </span>
+            </div>
+
+        </div>
+
+
+        <form class="centerSection flex flex-col gap-2 w-full px-8 relative">
+
+            <label for="formCall" class="text-right">
+                شماره تماس
+            </label>
+
+            <div id="fildCall"
+                class="transition duration-300 ease-in w-full flex flex-row-reverse gap-3 justify-center items-center border-2 border-[#9E624C] rounded-xl  h-[3rem]">
+
+                <i
+                    class="bi bi-telephone w-[20%] text-[1.5rem] text-[#9E624C] mx-auto flex items-center justify-center"></i>
+
+                <input type="text" autocomplete="off" name="formCall" id="formCall" dir="rtl" maxlength="11"
+                    placeholder="مثلا : 090123456" class="w-[80%] text-[1.1rem] focus:outline-0 text-left">
+
+                <!-- <span class="counter text-[#f89f7e]">11</span> -->
+
+            </div>
+
+            <div class="absolute bottom-[3.5rem] right-[2.5rem]">
+                <ul>
+                    <li>
+                        <p id="alertEror" class="transition duration-300 ease-in font-normal text-[0.9rem]">
+                            <!-- شماره صحیح رو وارد نکردی ):
+                            حالا درست شددد (: -->
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="verify.html" id="btnSms"
+                class="w-full z-[1000] opacity-50 pointer-events-none select-none transition duration-300 ease-in text-white max-w-[85%] bg-[#9E624C] rounded-xl py-3 mt-7 text-center mx-auto">
+                ارسال کد ...
+            </a>
+
+        </form>
+
+    </section>
+
+    <footer
+        class="footer absolute z-[-1000] bottom-0 left-0 bg-bottom bg-size-[100%_9rem] bg-no-repeat w-full h-[8rem] min-laptop:h-[10rem]">
+        <!-- <img src="assets/img(3)/Vector 1.png" class="relative bottom-0 left-0" alt=""> -->
+    </footer>
+
+
+
+    <!-- _______loading animation______ -->
+    <div class="dadLoader transition duration-1000 ease-in">
+        <div class="loader">
+            <div class="containerLoader">
+                <div class="coffee-header">
+                    <div class="coffee-header__buttons coffee-header__button-one"></div>
+                    <div class="coffee-header__buttons coffee-header__button-two"></div>
+                    <div class="coffee-header__display"></div>
+                    <div class="coffee-header__details"></div>
+                </div>
+                <div class="coffee-medium">
+                    <div class="coffe-medium__exit"></div>
+                    <div class="coffee-medium__arm"></div>
+                    <div class="coffee-medium__liquid"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                    <div class="coffee-medium__cup"></div>
+                </div>
+                <div class="coffee-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jq js -->
+    <script src="script/jquery.min.js" defer></script>
+
+    <!-- custom js -->
+    <script src="script/myJs(3).js" defer></script>
+
+</body>
+
+</html>
