@@ -52,7 +52,7 @@
 
     <!-- alert OK -->
     <div id="alertOk"
-        class="flex w-full max-w-[80%] mx-auto absolute top-[10%] border-1 border-emerald-500 -translate-x-[100rem] transition duration-800 ease-in laptop:duration-500 overflow-hidden bg-[#f2e5da] rounded-lg shadow-2xl">
+        class="alertValid flex w-full max-w-[80%] mx-auto absolute border-1 border-emerald-500 left-[10%] top-[-5rem] laptop:duration-500 overflow-hidden bg-[#f2e5da] rounded-lg shadow-2xl">
         <div class="flex items-center justify-center w-12 bg-emerald-500">
             <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -70,7 +70,7 @@
 
     <!-- alert EROR -->
     <div id="alertEror"
-        class="flex w-full max-w-[80%] border-1 border-red-500 mx-auto absolute top-[10%] laptop:top-[12%] -translate-x-[100rem] transition duration-800 ease-in laptop:duration-500 overflow-hidden bg-[#f2e5da] rounded-lg shadow-2xl">
+        class="alertValid flex w-full max-w-[80%] border-1 border-red-500 mx-auto absolute left-[10%] top-[-5rem] laptop:duration-500 overflow-hidden bg-[#f2e5da] rounded-lg shadow-2xl">
         <div class="flex items-center justify-center w-12 bg-red-500">
             <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -82,7 +82,7 @@
             <div class="mx-3">
                 <span class="font-semibold text-red-500 dark:text-red-400">خطا !</span>
                 <p class="text-[0.8rem] text-gray-800">
-                    لطفا اعداد را به انگلیسی و تمام فیلد ها ار پر کنید
+                    لطفا قوانین را رعایت کنید .
                 </p>
             </div>
         </div>
@@ -115,7 +115,7 @@
                 کد ورود
             </label>
 
-            <div class="w-full flex flex-row gap-3 justify-center items-center h-[3rem]">
+            <div class="inputContainer w-full flex flex-row gap-3 justify-center items-center h-[3rem]">
 
                 <input type="text" name="formCall" dir="ltr" maxlength="1" autocomplete="off"
                     class="formCode w-[20%] text-black bg-white text-[1.1rem] focus:outline-0 border-1 h-full rounded-xl transition duration-100 ease-in p-4 text-center focus:border-[#9E624C] border-gray-200">

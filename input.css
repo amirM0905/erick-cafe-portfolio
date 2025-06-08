@@ -1,0 +1,79 @@
+@import url('/BYekan/BYekan+.ttf');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+
+
+    --breakpoint-tablet: 40rem;    /*640px*/
+    --breakpoint-laptop: 48rem;    /*768px*/
+    --breakpoint-smPc: 64rem;        /*1024px*/
+    --breakpoint-pc: 80rem;     /*1280px*/
+
+}
+
+
+@layer components {
+    
+    /* __________________myDoc.html__________________ */
+
+    /* <!--___ scroolX___ --> */
+    .listInScroX {
+        @apply flex flex-col items-center justify-center gap-3 min-w-[6.5rem] mb-[2rem]
+    }
+
+    /* <!-- تخفیفات ویژه --> */
+    .spInTopOff{
+        @apply m-auto text-[1.1rem] font-[600] transition duration-500 text-[#9B9895]
+    }
+    .cardOffer{
+        @apply m-auto max-w-[270px] w-[100%] h-[360px] border-1 border-gray-200 rounded-2xl relative flex flex-col gap-[1rem]
+    }
+
+    /* <!-- تخفیفات ویژه -768 --> */
+    .offerDiv{
+        @apply m-auto flex flex-row gap-4 smPc:gap-[2rem]
+    }
+    .itemInOffDiv{
+        @apply w-[100%] h-[360px] border-1 border-gray-200 rounded-2xl relative flex flex-col
+    }
+
+    /* <!-- ___BANNER__768___ --> */
+    .itemInBanner{
+        @apply max-w-[25%] h-[12rem] w-full bg-[#28221E] rounded-2xl flex items-center justify-center 
+    }
+
+    /* <!-- پرفروش ترین ها --> */
+    .itemInTab{
+        @apply m-auto w-[100%] dark:bg-[#263347] dark:border-0 h-[20rem] border-1 border-gray-200 rounded-2xl relative flex flex-col gap-[1rem]
+    }
+    .itemInTab-responsive{
+        @apply  m-auto w-[100%] dark:bg-[#263347] dark:border-0 h-[20rem] border-1 border-gray-200 rounded-2xl relative max-smPc:hidden smPc:flex flex-col gap-[1rem]
+    }
+
+    /* <!-- آموزش ها --> */
+    .tutorial-card{
+        @apply  max-w-[20rem] pc:max-w-[18rem] mx-auto p-2 w-full flex flex-col gap-6 transition duration-300 border-1 border-gray-300 overflow-hidden rounded-xl bg-white pc:shadow-[0px_3px_19px_-7px_gray]
+    }
+
+
+
+    /* __________________myDoc(2).html__________________ */
+
+    /* <!-- header --> */
+    .itemGuarantee{
+        @apply border-1 border-gray-300 smPc:border-gray-200 bg-[#E9E9E8] smPc:bg-[#F7F7F7] rounded-xl w-full gap-4 px-2 py-2 min-w-[210px] max-w-[210px] smPc:max-w-full flex ml-[1rem] mb-6
+    }
+
+    /* <!-- tabNogation --> */
+    .lableTab{
+        @apply transition duration-400 ease-in-out text-[1rem] font-[300] text-gray-400 cursor-pointer
+    }
+
+    /* <!-- card caffe --> */
+    .cardCafe{
+        @apply m-auto min-w-[12rem] laptop:min-w-[12rem] w-full h-[20rem] border-1 border-gray-200 dark:bg-[#263347] dark:border-0 rounded-2xl relative flex flex-col gap-[1rem] shadow-[0px_7px_20px_-8px_gray] dark:shadow-lg
+    }
+    
+
+}
