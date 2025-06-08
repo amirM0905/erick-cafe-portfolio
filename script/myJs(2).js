@@ -40,6 +40,7 @@ $(document).ready(function () {
 
     $("[data-item-active]").click(function () {
         $("[data-navbarActive]").removeClass("show").addClass("sidebar");
+        $("body").removeClass("overflow-hidden");
         $("[data-overlay]").addClass("hidden");
     });
 
