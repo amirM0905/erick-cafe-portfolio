@@ -37,6 +37,7 @@ $(document).ready(function () {
 
     $("[data-overlay], body").click(function () {
         $("[data-navbarActive]").removeClass("show").addClass("sidebar");
+        $("body").removeClass("overflow-hidden");
         $("[data-overlay]").addClass("hidden");
     });
 
