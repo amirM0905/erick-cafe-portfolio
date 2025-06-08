@@ -32,12 +32,22 @@ input {
 
 
 
-
+/* __________________inputs_______________ */
+.inputContainer{
+    direction: ltr;
+}
 
 
 /* _________footer__________ */
 .footer {
     background-image: url("../assets/img\(3\)/Vector 1.png");
+}
+
+
+
+/* ___________alert validation___________ */
+.alertValid{
+    transition: top 0.6s ease;
 }
 
 

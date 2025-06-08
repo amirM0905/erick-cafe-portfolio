@@ -72,7 +72,7 @@
 
     /* <!-- card caffe --> */
     .cardCafe{
-        @apply m-auto min-w-[10rem] laptop:min-w-[12rem] w-full h-[20rem] border-1 border-gray-200 dark:bg-[#263347] dark:border-0 rounded-2xl relative flex flex-col gap-[1rem] shadow-[0px_7px_20px_-8px_gray]
+        @apply m-auto min-w-[12rem] laptop:min-w-[12rem] w-full h-[20rem] border-1 border-gray-200 dark:bg-[#263347] dark:border-0 rounded-2xl relative flex flex-col gap-[1rem] shadow-[0px_7px_20px_-8px_gray] dark:shadow-lg
     }
     
 

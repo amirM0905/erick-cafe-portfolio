@@ -54,19 +54,31 @@ $(document).ready(function () {
         });
 
         if (allValid) {
-            alertOk.removeClass("translate-x-[100rem] -translate-x-[100rem]").addClass("-translate-x-[10%]");
+            alertOk.removeClass("top-[-5rem]").addClass("top-[11%]");
 
             setTimeout(() => {
                 window.location.href = 'index.html';
             }, 2000);
         } else {
-            alertEror.removeClass("translate-x-[100rem] -translate-x-[100rem]").addClass("-translate-x-[10%]");
+            alertEror.removeClass("top-[-5rem]").addClass("top-[11%]");
 
             setTimeout(() => {
-                alertEror.removeClass("-translate-x-[10%]").addClass("translate-x-[100rem]");
+                alertEror.removeClass("top-[11%]").addClass("top-[-5rem]");
             }, 2000);
         }
     });
+
+    // ____________ux بهتر
+    $(formCode).on("input", function () {
+        if (this.value.length === 1) {
+            $(this).next(formCode).focus()
+        }
+    }).on("keydown" , function (eve) {
+        if (eve.key === "Backspace" && !$(this).val()) {
+            $(this).prev(formCode).focus()
+        }
+    })
+
 
 
    // <!-- _______loading animation______ -->
