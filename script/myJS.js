@@ -26,7 +26,9 @@ $(document).ready(function () {
         e.stopPropagation();
 
         $("[data-navbarActive]").removeClass("show").addClass("show");
+        $("body").addClass("overflow-hidden");
         $("[data-overlay]").removeClass("hidden");
+        
     });
 
     $("[data-navbarActive]").click(function (e) {
