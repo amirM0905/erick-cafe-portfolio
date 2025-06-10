@@ -15,7 +15,7 @@ $(document).ready(function () {
     $(formCall).on("input", function () {
 
         let formCallValue = $(formCall).val();
-        let falsVal = /^(09)[0-9۰-۹]{9}$/;
+        let falsVal = /^(۰۹)[0-9۰-۹]{9}$/;
 
         if (formCallValue.length < 11 || !falsVal.test(formCallValue)) {
 
